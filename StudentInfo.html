@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Student Enrollment Form</title>
+</head>
+<body bgcolor="beige">
+    <form action="/submit-data" method="post">
+        <p><strong>Student Details</strong></p>
+        
+        First Name: <input name="firstName" type="text" required /> <br/><br/>
+        Last Name: <input name="lastName" type="text" required /> <br/><br/>
+        Email: <input name="email" type="email" required /> <br/><br/>
+        Age: <input name="myAge" type="number" min="1" required /> <br/><br/>
+
+        <p>Please select your gender:</p>
+        <input type="radio" id="male" name="gender" value="male" required />
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other" />
+        <label for="other">Other</label><br><br>
+
+        <p><strong>Qualifications</strong></p>
+        <input type="checkbox" name="qualifications" value="GCSE" />
+        <label>GCSE</label><br/>
+        <input type="checkbox" name="qualifications" value="A-level" />
+        <label>A-level</label><br/>
+        <input type="checkbox" name="qualifications" value="Higher National Certificate" />
+        <label>Higher National Certificate/Level 4</label><br/>
+        <input type="checkbox" name="qualifications" value="HND" />
+        <label>Foundation Degree/HND/DipHE/Level 5</label><br/>
+        <input type="checkbox" name="qualifications" value="B.Sc" />
+        <label>Bachelor Degree/Graduate Diploma or Certificate/Level 6</label><br/>
+        <input type="checkbox" name="qualifications" value="Master Degree" />
+        <label>Master Degree/PGCE/Level 7</label><br/>
+        <input type="checkbox" name="qualifications" value="PhD" />
+        <label>PhD/Level 8</label><br/><br/>
+
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>
